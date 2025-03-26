@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Tarea 1 Donas"/>
+        <attribute name="authors" value="edgar"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-26 03:33:03 p. m."/>
+        <attribute name="created" value="ZWRnYXI7RURHQVItUEM7MjAyNS0wMy0yNjswMzoxMTo0NSBwLiBtLjsyNTI4"/>
+        <attribute name="edited" value="ZWRnYXI7RURHQVItUEM7MjAyNS0wMy0yNjswMzozMzowMyBwLiBtLjsxOzI2MzQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, r" type="Integer" array="False" size=""/>
+            <output expression="&quot;Escribe el numero de piezas compradas: &quot;" newline="True"/>
+            <input variable="x"/>
+            <if expression="(x&lt;30)">
+                <then>
+                    <assign variable="r" expression="x*10"/>
+                    <output expression="&quot;El precio a pagar es: &quot;&amp;r" newline="True"/>
+                </then>
+                <else>
+                    <if expression="(x&lt;50)">
+                        <then>
+                            <assign variable="r" expression="(x*10)-x"/>
+                            <output expression="&quot;El precio a pagar es: &quot;&amp;r" newline="True"/>
+                        </then>
+                        <else>
+                            <assign variable="r" expression="(x*10)-(x*2)"/>
+                            <output expression="&quot;El precio a pagar es: &quot;&amp;r" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
