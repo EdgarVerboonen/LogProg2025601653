@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Tarea 4 Sala de Juegos"/>
+        <attribute name="authors" value="edgar"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-02 01:44:57 p. m."/>
+        <attribute name="created" value="ZWRnYXI7RURHQVItUEM7MjAyNS0wNC0wMjswMTozMzoyMSBwLiBtLjsyNTE5"/>
+        <attribute name="edited" value="ZWRnYXI7RURHQVItUEM7MjAyNS0wNC0wMjswMTo0NDo1NyBwLiBtLjsxOzI2Mzg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x" type="Integer" array="False" size=""/>
+            <output expression="&quot;Introduce tu edad: &quot;" newline="True"/>
+            <input variable="x"/>
+            <if expression="(x&lt;4)">
+                <then>
+                    <output expression="&quot;Entrada gratis :)&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="(x&gt;=4 AND x&lt;=18)">
+                        <then>
+                            <output expression="&quot;Deberas pagar $200 :(&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="(x&gt;18)">
+                                <then>
+                                    <output expression="&quot;Deberas pagar $500 :'(&quot;" newline="True"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
