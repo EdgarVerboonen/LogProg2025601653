@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Factorial"/>
+        <attribute name="authors" value="edgar"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-07 07:12:26 p. m."/>
+        <attribute name="created" value="ZWRnYXI7RURHQVItUEM7MjAyNS0wNC0wNzswNjoyOToxNiBwLiBtLjsyNTM4"/>
+        <attribute name="edited" value="ZWRnYXI7RURHQVItUEM7MjAyNS0wNC0wNzswNzoxMjoyNiBwLiBtLjsxOzI2NDA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, x, f" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="1"/>
+            <assign variable="f" expression="1"/>
+            <output expression="&quot;Introduce un numero: &quot;" newline="True"/>
+            <input variable="x"/>
+            <if expression="x&lt;0">
+                <then>
+                    <output expression="&quot;No se puede calcular el factorial de un numero negativo&quot;" newline="True"/>
+                </then>
+                <else>
+                    <while expression="i&lt;=x">
+                        <assign variable="f" expression="f*i"/>
+                        <assign variable="i" expression="i+1"/>
+                    </while>
+                    <output expression="&quot;El factorial es: &quot;&amp;f" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
